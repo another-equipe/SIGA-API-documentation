@@ -1,8 +1,10 @@
 <hr>
 
-<div style="display: flex; justify-content: left; width: 100%;">
-    <span style="padding: 16px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/index.md">Português</a></span>
-    <span style="padding: 16px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/en/index.md">Inglês</a></span>
+<div style="display: flex; justify-content: space-around; width: 100%;">
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/index.md">Português</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/en/index.md">Inglês</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/pt/index.md">Português de Portugal</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/es/index.md">Espanhol</a></span>
 </div>
 
 <hr>
@@ -10,16 +12,16 @@
 ## SIGA API | Documentação
 
 
-O SIGA API é uma api que fornece uma integração por Rest API, e facilita a integração entre os diversos sistemas da [SaveCash](https://www.savecash.com.br/) ao portal do SIGA.
+The SIGA API is an api that provides an integration by Rest API, and facilitates the integration between the various systems of [SaveCash](https://www.savecash.com.br/) to the SIGA portal.
 
 
 ## Api Key
 
-Para poder ultilizar a API é necessário a ultilzação de uma chave exclusiva para autenticação.
+To be able to use the API it is necessary to use a unique key for authentication.
 
-Para obtenção dessa chave [mande um email](mailto:dev.waynerocha@gmail.com) para nós solicitando uma chave.
+To obtain this key [send an email](mailto:dev.waynerocha@gmail.com) to us requesting a key.
 
-caso a autenticação falhe será retorndo a seguinte resposta
+if authentication fails, the following response will be returned
 
 ```json
 {
@@ -31,15 +33,15 @@ caso a autenticação falhe será retorndo a seguinte resposta
 
 ## EndPoints
 
-### Obter uma lista dos candidatos
+### Get a list of candidates
 
 ```
 https://savecash.tech/wp-json/siga/v1/candidates?key={sua_chave}
 ```
 
-Retorna uma lista dos candidatos.
+Return a list of candidates
 
-**Exemplo de resposta**
+**Response**
 
 ```json
 {
@@ -123,25 +125,25 @@ Retorna uma lista dos candidatos.
 }
 ```
 
-| Chave  | Valor |
+| Key  | Value |
 |---|---|
-| **status** *(String)* | Caso a requisição ocorra bem, status será `success` |
-| **count** *(number)*  | Quantidades de candidatos existentes |
-| **next** *(string \| null)*  | Link para a próxima página de candidatos, caso não haja, será `null` |
-| **previous** *(string \| null)*  | Link para a página anterior de candidatos, caso não haja, será `null` |
-| **candidates** *(array\<Candidates\>)*  | Array com os candidatos |
+| **status** *(String)* | if the request goes well, status will be `success`
+| **count** *(number)*  | Quantities of existing candidates |
+| **next** *(string \| null)*  | Link to next page of candidates, if not, it will be `null` |
+| **previous** *(string \| null)*  | Link to previous page of candidates, if not, it will be `null` |
+| **candidates** *(array\<Candidates\>)*  | Array with candidates
 
 <hr>
 
-### Obter um candidato especifíco
+### Get a specific candidate
 
 ```
 https://savecash.tech/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
 ```
 
-Retorna o candidado que tenha o numero de telefone
+Returns the candidate that has the phone number pass by parameter
 
-**Exemplo de resposta**
+**Response**
 
 ```json
 {
@@ -168,14 +170,14 @@ Retorna o candidado que tenha o numero de telefone
 
 | Chave  | Valor |
 |---|---|
-| **status** *(String)* | Caso a requisição ocorra bem, status será `success`, caso não seja encontrado nenhum candidato, `not-found` |
-| **candidate** *(Object)*  | Dados do candidato |
+| **status** *(String)* | If the request goes well, status will be `success`, if no candidate is found, `not-found` |
+| **candidate** *(Object)*  | Candidate data |
 
 <hr>
 
-## Páginação
+## Pagination
 
-A lista de candidatos é *retornada em partes*. Você pode customizar a forma como a resposta  é páginada por meio dos parâmetros `offset` e `limit`.
+The list of candidates is *returned in parts*. You can customize the way the response is paged through the `offset` and `limit` parameters.
 
 ```
 https://savecash.tech/wp-json/siga/v1/candidates?offset={numero}&limit={numero}&key={sua_chave}
@@ -183,9 +185,9 @@ https://savecash.tech/wp-json/siga/v1/candidates?offset={numero}&limit={numero}&
 
 | Parâmetro  | Valor |
 |---|---|
-| **offset** *(number)* | `offset` define a partir de qual registro a resposta começará. Por exemplo, um `offset=5` trará como primeiro ítem da lista o 5º registro no banco de dados. Deve ser um número positivo. *Padrão é 0* |
-| **limit** *(number)*  | `limit` define quantos registros serão buscados. Por exemplo, um `limit=30` trará os 30 registros á partir do `offset`. Valor máximo é 100. *Padrão é 100* |
+| **offset** *(number)* | `offset` defines from which register the response will start. For example, `offset=5` will bring the 5th register in the database as the first item in the list. It must be a positive number. *Default is 0* |
+| **limit** *(number)*  | `limit` defines how many registers will be fetched. For example, `limit=30` will bring the 30 records from the `offset`. Maximum value is 100. *Default is 100* |
 
-> No corpo da resposta as propriedades `next` e `previous` fornecem a URL para a página posterior e anterior da páginação.
+> In the response body the `next` and `previous` properties provide the URL to the next and previous page.
 
 
