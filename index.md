@@ -30,6 +30,12 @@ caso a autenticação falhe será retornado a seguinte resposta
 
 ### Obter uma lista dos candidatos
 
+> ambiente de desenvolvimento
+```
+https://siga.devsavecash.xyz/siga/v1/candidates?key={sua_chave}
+```
+
+> ambiente de produção
 ```
 https://savecash.tech/wp-json/siga/v1/candidates?key={sua_chave}
 ```
@@ -132,6 +138,12 @@ Retorna uma lista dos candidatos.
 
 ### Obter um candidato especifíco
 
+> ambiente de desenvolvimento
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
+```
+
+> ambiente de produção
 ```
 https://savecash.tech/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
 ```
