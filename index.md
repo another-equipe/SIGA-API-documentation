@@ -14,7 +14,7 @@ O SIGA API é uma api que fornece uma integração por Rest API, e facilita a in
 
 Para poder ultilizar a API é necessário a ultilzação de uma chave exclusiva para autenticação.
 
-Para obtenção dessa chave [mande um email](mailto:dev.waynerocha@gmail.com) para nós solicitando uma chave.
+Para obtenção dessa chave [mande um email](mailto:rodrigo.zillesg@savecash.com.br) para nós solicitando uma chave.
 
 caso a autenticação falhe será retorndo a seguinte resposta
 
