@@ -1,6 +1,19 @@
+<hr>
+
+<div style="display: flex; justify-content: space-around; width: 100%;">
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/index.md">Português</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/langs/en/index.md">Inglês</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/langs/pt/index.md">Português de Portugal</a></span>
+    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/langs/es/index.md">Espanhol</a></span>
+</div>
+
+<hr>
+
 ## SIGA API | Documentação
 
+
 O SIGA API é uma api que fornece uma integração por Rest API, e facilita a integração entre os diversos sistemas da [SaveCash](https://www.savecash.com.br/) ao portal do SIGA.
+
 
 ## Api Key
 
