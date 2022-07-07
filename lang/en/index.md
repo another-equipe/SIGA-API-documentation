@@ -1,10 +1,8 @@
 <hr>
 
 <div style="display: flex; justify-content: space-around; width: 100%;">
-    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/index.md">Português</a></span>
-    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/en/index.md">Inglês</a></span>
-    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/pt/index.md">Português de Portugal</a></span>
-    <span style="padding: 12px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/es/index.md">Espanhol</a></span>
+    <span style="padding: 12px;"><a href="https://another-equipe.github.io/SIGA-API-documentation/">Português</a></span>
+    <span style="padding: 12px;"><a href="https://another-equipe.github.io/SIGA-API-documentation/lang/en/">Inglês</a></span>
 </div>
 
 <hr>

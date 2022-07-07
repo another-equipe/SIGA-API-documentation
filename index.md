@@ -1,8 +1,8 @@
 <hr>
 
 <div style="display: flex; justify-content: left; width: 100%;">
-    <span style="padding: 16px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/index.md">Português</a></span>
-    <span style="padding: 16px;"><a href="https://github.com/another-equipe/SIGA-API-documentation/lang/en/index.md">Inglês</a></span>
+    <span style="padding: 16px;"><a href="https://another-equipe.github.io/SIGA-API-documentation/">Português</a></span>
+    <span style="padding: 16px;"><a href="https://another-equipe.github.io/SIGA-API-documentation/lang/en/">Inglês</a></span>
 </div>
 
 <hr>
