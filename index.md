@@ -16,7 +16,7 @@ Para poder ultilizar a API é necessário a ultilzação de uma chave exclusiva 
 
 Para obtenção dessa chave [mande um email](mailto:rodrigo.zillesg@savecash.com.br) para nós solicitando uma chave.
 
-caso a autenticação falhe será retorndo a seguinte resposta
+caso a autenticação falhe será retornado a seguinte resposta
 
 ```json
 {
