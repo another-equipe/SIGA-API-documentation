@@ -173,7 +173,7 @@ https://savecash.tech/wp-json/siga/v1/candidates?offset={numero}&limit={numero}&
 | Parâmetro  | Valor |
 |---|---|
 | **offset** *(number)* | `offset` define a partir de qual registro a resposta começará. Por exemplo, um `offset=5` trará como primeiro ítem da lista o 5º registro no banco de dados. Deve ser um número positivo. *Padrão é 0* |
-| **limit** *(number)*  | `limit` define quantos registros serão buscados. Por exemplo, um `limit=30` trará os 30 registros á partir do `offset`. Valor máximo é 100. Padrão é 100 |
+| **limit** *(number)*  | `limit` define quantos registros serão buscados. Por exemplo, um `limit=30` trará os 30 registros á partir do `offset`. Valor máximo é 100. *Padrão é 100* |
 
 > No corpo da resposta as propriedades `next` e `previous` fornecem a URL para a página posterior e anterior da páginoção.
 
