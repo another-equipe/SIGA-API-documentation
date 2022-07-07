@@ -6,7 +6,6 @@
 
 ## SIGA API | Documentação
 
-
 O SIGA API é uma api que fornece uma integração por Rest API, e facilita a integração entre os diversos sistemas da [SaveCash](https://www.savecash.com.br/) ao portal do SIGA.
 
 
