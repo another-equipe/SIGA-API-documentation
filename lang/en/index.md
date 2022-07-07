@@ -14,7 +14,7 @@ The SIGA API is an api that provides an integration by Rest API, and facilitates
 
 To be able to use the API it is necessary to use a unique key for authentication.
 
-To obtain this key [send an email](mailto:dev.waynerocha@gmail.com) to us requesting a key.
+To obtain this key [send an email](mailto:rodrigo.zillesg@savecash.com.br) to us requesting a key.
 
 if authentication fails, the following response will be returned
 
