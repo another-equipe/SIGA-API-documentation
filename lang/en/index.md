@@ -30,6 +30,12 @@ if authentication fails, the following response will be returned
 
 ### Get a list of candidates
 
+> Development environment
+```
+https://siga.devsavecash.xyz/siga/v1/candidates?key={sua_chave}
+```
+
+> Production environment
 ```
 https://savecash.tech/wp-json/siga/v1/candidates?key={sua_chave}
 ```
@@ -132,6 +138,12 @@ Return a list of candidates
 
 ### Get a specific candidate
 
+> Development environment
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
+```
+
+> Production environment
 ```
 https://savecash.tech/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
 ```
