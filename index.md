@@ -31,7 +31,7 @@ caso a autenticação falhe será retornado a seguinte resposta
 
 > ambiente de desenvolvimento
 ```
-https://siga.devsavecash.xyz/siga/v1/candidates?key={sua_chave}
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidates?key={sua_chave}
 ```
 
 > ambiente de produção
