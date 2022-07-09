@@ -32,7 +32,7 @@ if authentication fails, the following response will be returned
 
 > Development environment
 ```
-https://siga.devsavecash.xyz/siga/v1/candidates?key={sua_chave}
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidates?key={sua_chave}
 ```
 
 > Production environment
