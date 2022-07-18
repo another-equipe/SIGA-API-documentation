@@ -50,7 +50,7 @@ Retorna uma lista dos candidatos.
     "count": 3000,
     "next": "https://savecash.tech/wp-json/siga/v1/candidates?offset=0&limit=100&key={sua_chave}",
     "previous": null,
-    "candidates": [
+    "data": [
         {
             "candidate_nome": "Lorem ipsum dolor sit amet",
             "candidate_email": "email.example@hotmail.com",
@@ -161,7 +161,7 @@ Retorna o candidado que tenha o numero de telefone
 ```json
 {
   "status": "success",
-  "candidate": {
+  "data": {
     "candidate_nome": "Lorem ipsum dolor sit amet",
     "candidate_email": "example.mail@gmail.com",
     "candidate_vaga": "gerente",
@@ -206,30 +206,19 @@ https://savecash.tech/wp-json/siga/v1/team/{id}?key={chave}
 
 Retorna todo o time de um candidato
 
-##### O campo de telefone deve estar sanitizado, apenas com números
-
 **Exemplo de resposta**
 
 ```json
 {
   "status": "success",
-  "candidate": {
-    "candidate_nome": "Lorem ipsum dolor sit amet",
-    "candidate_email": "example.mail@gmail.com",
-    "candidate_vaga": "gerente",
-    "candidate_telefone": "+5531984821900",
-    "candidate_cpf": "999.999.999-99",
-    "candidate_cnpj": "",
-    "candidate_razao": "",
-    "candidate_status": "contratado",
-    "recruiter_nome": "Lorem ipsum dolor sit amet",
-    "recruiter_email": "example.mail@gmail.com",
-    "recruiter_telefone": "+5531983707444",
-    "diretor_nome": null,
-    "lider_nome": null,
-    "gerente_nome": null,
-    "supervisor_nome": null
-  }
+  "data": {
+    "diretor": [{}, {}, {}],
+    "lider": [{}, {}, {}],
+    "gerente": [{}, {}, {}],
+    "supervisor": [{}, {}, {}, {}],
+    "consultor": [{}, {}, {}, {}],
+  },
+  "date": 1646949194
 }
 ```
 
@@ -288,31 +277,35 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 }
 ```
 
-Distrata todo o time a partir do primeiro nó. Se um gerente for passado, todos os subordinados(supervisor, consultor) dele serão distratados.
+Distrata _todo o time_ a partir do primeiro nó. Se um gerente for passado, o gerente e todos os subordinados(supervisor, consultor) dele serão distratados.
 
 
 **Exemplo de resposta**
 
 ```json
 {
-    "distracted": {
-        "id": "71796",
-        "candidate_email": "mbugler62@addtoany.com",
-        "recruiter_email": "f@savecash.com.br",
-        "candidate_vaga": "diretor"
+    "status": "success",
+    "data": {
+        "distracted": {
+            "id": "71796",
+            "candidate_email": "mbugler62@addtoany.com",
+            "recruiter_email": "f@savecash.com.br",
+            "candidate_vaga": "diretor"
+        },
+        "assumed": {
+            "id": "71796",
+            "candidate_email": "mbugler62@addtoany.com",
+            "recruiter_email": "f@savecash.com.br",
+            "candidate_vaga": "diretor"
+        },
+        "old_team": {
+            ...
+        },
+        "new_team": {
+            ...
+        }
     },
-    "assumed": {
-        "id": "71796",
-        "candidate_email": "mbugler62@addtoany.com",
-        "recruiter_email": "f@savecash.com.br",
-        "candidate_vaga": "diretor"
-    },
-    "old_team": {
-        ...
-    },
-    "new_team": {
-        ...
-    }
+    "date": 1646949194
 };
 ```
 
