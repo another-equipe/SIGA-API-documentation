@@ -184,7 +184,7 @@ Retorna o candidado que tenha o numero de telefone
 
 <hr>
 
-# Destratar candidato
+### Destratar candidato
 
 #### POST
 
@@ -212,7 +212,7 @@ Distrata um candidato, lhe envia um distrato e delete seu úsuario na plataforma
 }
 ```
 
-# Destratar time
+### Destratar time
 
 #### POST
 
@@ -225,7 +225,7 @@ https://siga.devsavecash.xyz/wp-json/siga/v1/candidate?key={sua_chave}
 > ambiente de produção
 
 ```
-https://savecash.tech/wp-json/siga/v1/candidates/{numero_de_telefone}?key={sua_chave}
+https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 ```
 
 #### body da requisição
