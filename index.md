@@ -277,7 +277,7 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 }
 ```
 
-Distrata _todo o time_ a partir do primeiro nó. Se um gerente for passado, o gerente e todos os subordinados(supervisor, consultor) dele serão distratados.
+Distrata _todo o time_ a partir do primeiro nó. Se um gerente for passado, todos os subordinados(supervisor, consultor) dele serão distratados.
 
 
 **Exemplo de resposta**
