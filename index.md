@@ -24,7 +24,9 @@ caso a autenticação falhe será retornado a seguinte resposta
 
 ## EndPoints
 
-### [Obter uma lista dos candidatos](#all_candidates)
+### Obter uma lista dos candidatos
+
+#### GET
 
 > ambiente de desenvolvimento
 
@@ -58,7 +60,7 @@ Retorna uma lista dos candidatos.
             "candidate_cnpj": "",
             "candidate_razao": "",
             "candidate_status": "contratado",
-            "recruiter_nome": "Fabian Moura"
+            "recruiter_nome": "Fabian Moura",
             "recruiter_email": "f@savecash.com.br",
             "recruiter_telefone": "+5567994984911",
             "diretor_nome": null,
@@ -75,7 +77,7 @@ Retorna uma lista dos candidatos.
             "candidate_cnpj": "",
             "candidate_razao": "",
             "candidate_status": "contratado",
-            "recruiter_nome": "Fabian Moura"
+            "recruiter_nome": "Fabian Moura",
             "recruiter_email": "f@savecash.com.br",
             "recruiter_telefone": "+5567994984911",
             "diretor_nome": null,
@@ -92,7 +94,7 @@ Retorna uma lista dos candidatos.
             "candidate_cnpj": "",
             "candidate_razao": "",
             "candidate_status": "contratado",
-            "recruiter_nome": "Fabian Moura"
+            "recruiter_nome": "Fabian Moura",
             "recruiter_email": "f@savecash.com.br",
             "recruiter_telefone": "+5567994984911",
             "diretor_nome": null,
@@ -109,7 +111,7 @@ Retorna uma lista dos candidatos.
             "candidate_cnpj": "",
             "candidate_razao": "",
             "candidate_status": "contratado",
-            "recruiter_nome": "Fabian Moura"
+            "recruiter_nome": "Fabian Moura",
             "recruiter_email": "f@savecash.com.br",
             "recruiter_telefone": "+5567994984911",
             "diretor_nome": null,
@@ -135,6 +137,8 @@ Retorna uma lista dos candidatos.
 <hr>
 
 ### Obter um candidato especifíco
+
+#### GET
 
 > ambiente de desenvolvimento
 
@@ -180,7 +184,54 @@ Retorna o candidado que tenha o numero de telefone
 | Chave                    | Valor                                                                                                       |
 | ------------------------ | ----------------------------------------------------------------------------------------------------------- |
 | **status** _(String)_    | Caso a requisição ocorra bem, status será `success`, caso não seja encontrado nenhum candidato, `not-found` |
-| **candidate** _(Object)_ | Dados do candidato                                                                                          |
+| **candidate** _(Object)_ | Dados do candidato
+
+<hr>
+
+### Obter um time
+
+#### GET
+
+> ambiente de desenvolvimento
+
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/team/{id}?key={chave}
+```
+
+> ambiente de produção
+
+```
+https://savecash.tech/wp-json/siga/v1/team/{id}?key={chave}
+```
+
+Retorna todo o time de um candidato
+
+##### O campo de telefone deve estar sanitizado, apenas com números
+
+**Exemplo de resposta**
+
+```json
+{
+  "status": "success",
+  "candidate": {
+    "candidate_nome": "Lorem ipsum dolor sit amet",
+    "candidate_email": "example.mail@gmail.com",
+    "candidate_vaga": "gerente",
+    "candidate_telefone": "+5531984821900",
+    "candidate_cpf": "999.999.999-99",
+    "candidate_cnpj": "",
+    "candidate_razao": "",
+    "candidate_status": "contratado",
+    "recruiter_nome": "Lorem ipsum dolor sit amet",
+    "recruiter_email": "example.mail@gmail.com",
+    "recruiter_telefone": "+5531983707444",
+    "diretor_nome": null,
+    "lider_nome": null,
+    "gerente_nome": null,
+    "supervisor_nome": null
+  }
+}
+```
 
 <hr>
 
