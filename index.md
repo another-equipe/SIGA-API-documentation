@@ -207,8 +207,8 @@ Distrata um candidato, lhe envia um distrato e delete seu úsuario na plataforma
 ```
 {
     "trigger": "distract-candidate",
-    "from": {{id_que_sera_distratado}},
-    "to": {{id_de_quem_assumirá_a_equipe}},
+    "from": {id_que_sera_distratado},
+    "to": {id_de_quem_assumirá_a_equipe},
 }
 ```
 
@@ -233,7 +233,7 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 ```
 {
     "trigger": "distract-team",
-    "id": {{id_do_superior}},
+    "id": {id_do_superior},
 }
 ```
 
