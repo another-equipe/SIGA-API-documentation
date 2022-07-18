@@ -184,7 +184,7 @@ Retorna o candidado que tenha o numero de telefone
 
 <hr>
 
-### Destratar candidato
+### Distratar candidato
 
 #### POST
 
@@ -212,7 +212,7 @@ Distrata um candidato, lhe envia um distrato e delete seu úsuario na plataforma
 }
 ```
 
-### Destratar time
+### Distratar time
 
 #### POST
 
