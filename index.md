@@ -309,6 +309,36 @@ Distrata _todo o time_ a partir do primeiro nó. Se um gerente for passado, todo
 };
 ```
 
+### Promover candidato
+
+#### POST
+
+> ambiente de desenvolvimento
+
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+> ambiente de produção
+
+```
+https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+#### body da requisição
+
+```
+{
+    "trigger": "promote-candidate",
+    "id": {id_do_candidado},
+    "hierarquie": "{nova_posição}",
+    "to_assume": {id_de_quem_assumirá_o_time_do_promovido}
+}
+```
+
+Promove um candidato _todo o time_ a partir do primeiro nó. Se um gerente for passado, todos os subordinados(supervisor, consultor) dele serão distratados.
+
+
 
 
 ## Páginação
