@@ -339,7 +339,87 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 Promove um candidato _todo o time_ a partir do primeiro nó. Se um gerente for passado, todos os subordinados(supervisor, consultor) dele serão distratados.
 
 
+### Mandar distrato
 
+#### POST
+
+> ambiente de desenvolvimento
+
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+> ambiente de produção
+
+```
+https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+#### body da requisição
+
+```
+{
+    "trigger": "send-distract",
+    "id": {id_do_candidado},
+}
+```
+
+Manda um distrato ao candidato com ID especificado
+
+
+### Mandar contrato SCP
+
+#### POST
+
+> ambiente de desenvolvimento
+
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+> ambiente de produção
+
+```
+https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+#### body da requisição
+
+```
+{
+    "trigger": "send-spc-contract",
+    "id": {id_do_candidado},
+}
+```
+
+Manda um contrato SCP ao candidato com ID especificado
+
+### Mandar contrato SCP
+
+#### POST
+
+> ambiente de desenvolvimento
+
+```
+https://siga.devsavecash.xyz/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+> ambiente de produção
+
+```
+https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
+```
+
+#### body da requisição
+
+```
+{
+    "trigger": "send-attachment-contract",
+    "id": {id_do_candidado},
+}
+```
+
+Manda um contrato de anexo ao candidato com ID especificado
 
 ## Páginação
 
