@@ -395,7 +395,7 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 
 Manda um contrato SCP ao candidato com ID especificado
 
-### Mandar contrato SCP
+### Mandar contrato de anexo
 
 #### POST
 
