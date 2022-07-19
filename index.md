@@ -331,6 +331,7 @@ https://savecash.tech/wp-json/siga/v1/candidate?key={sua_chave}
 {
     "trigger": "promote-candidate",
     "id": {id_do_candidado},
+    "new_recruiter_id": {id_do_novo_recrutador},
     "hierarquie": "{nova_posição}",
     "to_assume": {id_de_quem_assumirá_o_time_do_promovido}
 }
